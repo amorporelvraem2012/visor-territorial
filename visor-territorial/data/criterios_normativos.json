@@ -1,0 +1,208 @@
+{
+  "meta": {
+    "ley_base": "Ley N° 27795, Ley de Demarcación y Organización Territorial (23/07/2002)",
+    "reglamento_vigente": "Texto Único Ordenado (TUO) del Reglamento de la Ley N° 27795, aprobado por Decreto Supremo N° 134-2025-PCM",
+    "reglamento_derogado": "Decreto Supremo N° 019-2003-PCM (reemplazado por el D.S. N° 191-2020-PCM)",
+    "ultima_actualizacion_incorporada": "D.S. N° 091-2026-PCM",
+    "fecha_carga_datos": "2026-07-08",
+    "actualizacion_2026-07-09": "Se corrigieron los umbrales de categorización con base en el Artículo 72 del Reglamento (D.S. 191-2020-PCM, con la redacción introducida por el D.S. 074-2025-PCM), verificado de forma independiente en dos fuentes: un informe técnico de la Gerencia Regional de Planeamiento de Huánuco y la Guía Práctica de Centros Poblados de IBC Perú (2024). Los umbrales de 'caserío' (ya no un solo rango, sino menor/mayor), 'pueblo' y 'villa' cambiaron respecto a la versión anterior de este archivo, que se basaba en el D.S. 019-2003-PCM (derogado).",
+    "historial_normativo": [
+      {
+        "norma": "D.S. N° 019-2003-PCM",
+        "fecha": "2003-02-24",
+        "tipo": "Reglamento original (DEROGADO)",
+        "descripcion": "Primer reglamento de la Ley 27795. Categorización en un solo rango por categoría (caserío 151-1,000; ciudad 5,001-500,000). Sustituido íntegramente en 2020."
+      },
+      {
+        "norma": "D.S. N° 191-2020-PCM",
+        "fecha": "2020-12-09",
+        "tipo": "Reglamento vigente (texto base)",
+        "descripcion": "Nuevo reglamento (118 artículos). El Art. 72 reordena la categorización en sub-tramos (menor/mayor/intermedia)."
+      },
+      {
+        "norma": "D.S. N° 120-2023-PCM",
+        "fecha": "2023",
+        "tipo": "Modificatoria",
+        "descripcion": "Introduce el Capítulo IV 'Categorización y Recategorización de Centros Poblados' con criterios y requerimientos detallados por categoría."
+      },
+      {
+        "norma": "D.S. N° 133-2023-PCM",
+        "fecha": "2023",
+        "tipo": "Modificatoria",
+        "descripcion": "Ajustes parciales adicionales al Reglamento (D.S. 191-2020-PCM)."
+      },
+      {
+        "norma": "D.S. N° 074-2025-PCM",
+        "fecha": "2025-05-30",
+        "tipo": "Modificatoria",
+        "descripcion": "Modifica el Art. 72 (entre otros: 4, 10, 13, 16, 21, 22, 37, 44, 54, 55, 57, 59, 60, 62), fijando los sub-tramos de población vigentes hoy."
+      },
+      {
+        "norma": "D.S. N° 134-2025-PCM",
+        "fecha": "2025-12",
+        "tipo": "Texto Único Ordenado (TUO)",
+        "descripcion": "Consolida en un solo cuerpo todas las modificatorias acumuladas desde 2020, sin cambio de fondo declarado. No se confirmó si el Art. 72 conserva ese mismo número tras la reordenación del TUO."
+      },
+      {
+        "norma": "D.S. N° 091-2026-PCM",
+        "fecha": "2026-06",
+        "tipo": "Modificatoria (incorporación)",
+        "descripcion": "Incorpora la Décima Novena Disposición Complementaria Final: regula la evaluación de expedientes de creación de distritos que cuentan con ley declarativa de interés nacional."
+      }
+    ],
+    "directivas_y_resoluciones_relacionadas": [
+      {
+        "norma": "R.V. N° 005-2019-PCM/DVGT",
+        "descripcion": "Aprueba la metodología que agrupa a los distritos del país según su sistema territorial (tipos B1, B2, B3), usando como variables la población de los centros poblados y su accesibilidad (tiempo de desplazamiento a la capital distrital)."
+      },
+      {
+        "norma": "Lineamientos que regulan el Registro Nacional de Límites",
+        "descripcion": "Aprobados por la SDOT; establecen el marco técnico del Registro Nacional de Límites, base de referencia para los procesos de saneamiento bajo la Ley 31463."
+      },
+      {
+        "norma": "Modelo de Accesibilidad (PCM, 2018)",
+        "descripcion": "Documento de trabajo de la SDOT que calcula el tiempo de desplazamiento estimado hacia la capital distrital más cercana, usado como capa técnica en GeoSDOT."
+      },
+      {
+        "norma": "Ley N° 27972, Ley Orgánica de Municipalidades, Art. 129",
+        "descripcion": "Regula la creación de una MUNICIPALIDAD de centro poblado (trámite distinto y posterior a la categorización): requiere que el centro poblado ya tenga 1,000 o más habitantes, solicitud respaldada por 1,000 firmas de residentes mayores de edad, dos delegados acreditados, y que no esté dentro del área urbana del distrito."
+      }
+    ],
+    "advertencia_umbrales": "Los umbrales de abajo (Art. 72) están corroborados por dos fuentes independientes (Gobierno Regional de Huánuco e IBC Perú), ambas citando el mismo articulado del D.S. 191-2020-PCM. Aun así, no se obtuvo el PDF oficial del TUO (D.S. 134-2025-PCM) para confirmar que el artículo conserva el número '72' tras la consolidación -- el contenido sustantivo es de alta confianza, la numeración exacta en el TUO queda pendiente de una verificación final si se va a citar en un expediente."
+  },
+  "categorias": [
+    {
+      "categoria": "caserío menor",
+      "categoria_padre": "caserío",
+      "poblacion_min": 51,
+      "poblacion_max": 500,
+      "verificado_contra_tuo_2025": true,
+      "requisitos_minimos": [
+        "Viviendas ubicadas en forma continua o parcialmente dispersa",
+        "Un local comunal de uso múltiple",
+        "Centro educativo en funcionamiento (nivel primario, al menos)"
+      ],
+      "fuente": "Art. 72, D.S. N° 191-2020-PCM (modificado por D.S. 074-2025-PCM); corroborado por informe técnico GRPPAT Huánuco (2025) y Guía Práctica de Centros Poblados, IBC Perú (2024)"
+    },
+    {
+      "categoria": "caserío mayor",
+      "categoria_padre": "caserío",
+      "poblacion_min": 501,
+      "poblacion_max": 1000,
+      "verificado_contra_tuo_2025": true,
+      "requisitos_minimos": [
+        "Viviendas ubicadas en forma continua o parcialmente dispersa",
+        "Un local comunal de uso múltiple",
+        "Centro educativo en funcionamiento"
+      ],
+      "fuente": "Art. 72, D.S. N° 191-2020-PCM (modificado por D.S. 074-2025-PCM); corroborado por informe técnico GRPPAT Huánuco (2025) y Guía Práctica de Centros Poblados, IBC Perú (2024)"
+    },
+    {
+      "categoria": "pueblo",
+      "categoria_padre": "pueblo",
+      "poblacion_min": 1001,
+      "poblacion_max": 2000,
+      "verificado_contra_tuo_2025": true,
+      "requisitos_minimos": [
+        "Viviendas contiguas y continuadas conformando calles",
+        "Una plaza principal y local comunal de uso múltiple",
+        "Servicios de educación (mínimamente inicial y primaria completa)",
+        "Servicios de salud (mínimamente un Puesto de Salud)",
+        "Esquema de Acondicionamiento Urbano (o el que haga sus veces)"
+      ],
+      "fuente": "Art. 72, D.S. N° 191-2020-PCM (modificado por D.S. 074-2025-PCM); corroborado por informe técnico GRPPAT Huánuco (2025) y Guía Práctica de Centros Poblados, IBC Perú (2024)"
+    },
+    {
+      "categoria": "villa",
+      "categoria_padre": "villa",
+      "poblacion_min": 2001,
+      "poblacion_max": 5000,
+      "verificado_contra_tuo_2025": true,
+      "requisitos_minimos": [
+        "Viviendas contiguas y continuadas con plaza principal, según Esquema de Acondicionamiento Urbano",
+        "Edificación de administración y gobierno",
+        "Equipamiento e infraestructura conforme al Esquema de Acondicionamiento Urbano",
+        "Servicios de salud: infraestructura, equipamiento y personal para un centro de salud"
+      ],
+      "fuente": "Art. 72, D.S. N° 191-2020-PCM (modificado por D.S. 074-2025-PCM); corroborado por informe técnico GRPPAT Huánuco (2025) y Guía Práctica de Centros Poblados, IBC Perú (2024)"
+    },
+    {
+      "categoria": "ciudad menor",
+      "categoria_padre": "ciudad",
+      "poblacion_min": 5001,
+      "poblacion_max": 20000,
+      "verificado_contra_tuo_2025": true,
+      "requisitos_minimos": [
+        "Plan de Acondicionamiento Territorial y/o Plan Urbano aprobado",
+        "Servicios de apoyo a la producción del área de influencia"
+      ],
+      "fuente": "Art. 72, D.S. N° 191-2020-PCM (modificado por D.S. 074-2025-PCM); corroborado por informe técnico GRPPAT Huánuco (2025) y Guía Práctica de Centros Poblados, IBC Perú (2024)"
+    },
+    {
+      "categoria": "ciudad intermedia",
+      "categoria_padre": "ciudad",
+      "poblacion_min": 20001,
+      "poblacion_max": 100000,
+      "verificado_contra_tuo_2025": true,
+      "requisitos_minimos": [
+        "Plan de Acondicionamiento Territorial y Planes Urbanos aprobados"
+      ],
+      "fuente": "Art. 72, D.S. N° 191-2020-PCM (modificado por D.S. 074-2025-PCM); corroborado por informe técnico GRPPAT Huánuco (2025) y Guía Práctica de Centros Poblados, IBC Perú (2024)"
+    },
+    {
+      "categoria": "ciudad mayor",
+      "categoria_padre": "ciudad",
+      "poblacion_min": 100001,
+      "poblacion_max": 500000,
+      "verificado_contra_tuo_2025": true,
+      "requisitos_minimos": [
+        "Plan de Acondicionamiento Territorial y Planes Urbanos aprobados",
+        "Instrumentos de gestión urbana de mayor escala"
+      ],
+      "fuente": "Art. 72, D.S. N° 191-2020-PCM (modificado por D.S. 074-2025-PCM); corroborado por informe técnico GRPPAT Huánuco (2025) y Guía Práctica de Centros Poblados, IBC Perú (2024)"
+    },
+    {
+      "categoria": "metrópoli regional",
+      "categoria_padre": "metrópoli",
+      "poblacion_min": 500001,
+      "poblacion_max": null,
+      "verificado_contra_tuo_2025": true,
+      "requisitos_minimos": [
+        "Plan de Acondicionamiento Territorial aprobado",
+        "Instrumentos de gestión metropolitana"
+      ],
+      "fuente": "Art. 72, D.S. N° 191-2020-PCM (modificado por D.S. 074-2025-PCM); corroborado por informe técnico GRPPAT Huánuco (2025) y Guía Práctica de Centros Poblados, IBC Perú (2024)"
+    },
+    {
+      "categoria": "metrópoli nacional",
+      "categoria_padre": "metrópoli",
+      "poblacion_min": 500001,
+      "poblacion_max": null,
+      "designacion_especial": "Reservada expresamente para Lima y Callao por el propio Art. 72, no solo por conteo poblacional -- ninguna otra jurisdicción puede acceder a esta sub-categoría aunque supere el umbral.",
+      "verificado_contra_tuo_2025": true,
+      "requisitos_minimos": [
+        "Aplica únicamente a Lima y Callao por designación normativa expresa"
+      ],
+      "fuente": "Art. 72, D.S. N° 191-2020-PCM (modificado por D.S. 074-2025-PCM); corroborado por Guía Práctica de Centros Poblados, IBC Perú (2024)"
+    }
+  ],
+  "requisitos_creacion_centro_poblado": {
+    "descripcion": "Trámite previo y distinto a la categorización: la CREACIÓN de un centro poblado la resuelve la municipalidad distrital (acuerdo de concejo), mientras que la CATEGORIZACIÓN (asignarle caserío/pueblo/villa/etc.) la resuelve el gobierno regional.",
+    "requisitos": [
+      "No menos de 50 habitantes que busquen permanecer en el lugar",
+      "Al menos 5 años continuos con servicios de educación básica (primaria o secundaria) o un establecimiento de salud"
+    ],
+    "fuente": "Art. 8, numeral 8.2, D.S. N° 191-2020-PCM; Guía Práctica de Centros Poblados, IBC Perú (2024)"
+  },
+  "requisitos_creacion_distrito_provincia": [
+    "Volúmenes mínimos de población del ámbito territorial propuesto y del centro poblado capital",
+    "Tasa de crecimiento poblacional de los dos últimos períodos intercensales",
+    "Ubicación estratégica y articulación territorial respecto a capitales provinciales y ciudades importantes",
+    "Condiciones de seguridad física frente a fenómenos de geodinámica o climatológicos",
+    "Plan de Ordenamiento o Plan Director aprobado por la Municipalidad Provincial",
+    "Estudio de Diagnóstico y Zonificación (EDZ) aprobado por el Gobierno Regional",
+    "Informe previo favorable de sostenibilidad fiscal (requisito adicional introducido por normativa del MEF)",
+    "De contar con ley declarativa de interés nacional: tratamiento conforme a la Décima Novena Disposición Complementaria Final incorporada por el D.S. 091-2026-PCM"
+  ]
+}
+
