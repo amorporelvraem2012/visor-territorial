@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "ley_base": "Ley N° 31463, Ley que establece un proceso excepcional para el saneamiento de límites a nivel nacional (2022)",
+    "reglamento": "Aprobado por la PCM (D.S. N° 127-2022-PCM)",
+    "mecanismo": "El Poder Ejecutivo propone al Congreso, por cada departamento, un proyecto de ley de saneamiento total o parcial de límites intradepartamentales o interdepartamentales, sobre la base del Registro Nacional de Límites administrado por la SDOT. El Congreso viene aprobando estos dictámenes de forma continua durante 2026.",
+    "advertencia": "Esta es una muestra curada manualmente de casos aprobados por el Pleno del Congreso, recogidos de comunicaciones.congreso.gob.pe hasta el 08/07/2026. NO cubre las 25 regiones -- solo los departamentos/provincias con aprobaciones confirmadas en las fuentes consultadas. Los demás quedan marcados como 'sin_dato' para que el mapa no invente cifras.",
+    "fecha_carga_datos": "2026-07-08"
+  },
+  "avances": [
+    {
+      "departamento": "Lima",
+      "provincia": "Lima / Provincia Constitucional del Callao",
+      "porcentaje_saneado": 7.36,
+      "detalle": "Saneamiento de tres tramos de límite entre la provincia de Lima y la Provincia Constitucional del Callao (~4.37 km)",
+      "norma": "Proyecto de Ley 13731/2025-PE, aprobado por el Pleno",
+      "fecha_aprobacion": "2026-06"
+    },
+    {
+      "departamento": "Junín",
+      "provincia": "Jauja",
+      "porcentaje_saneado": 6.2,
+      "porcentaje_previo": 0.7,
+      "detalle": "Incremento del porcentaje de colindancia saneada en la provincia",
+      "norma": "Dictamen aprobado por el Pleno del Congreso",
+      "fecha_aprobacion": "2026-06"
+    },
+    {
+      "departamento": "Puno",
+      "provincia": "Chucuito",
+      "porcentaje_saneado": 85,
+      "detalle": "Saneamiento de trifinios, límites y tramos de diversos distritos (Proyecto de Ley 13725/2025-PE)",
+      "norma": "Proyecto de Ley 13725/2025-PE, aprobado por el Pleno",
+      "fecha_aprobacion": "2026-06"
+    },
+    {
+      "departamento": "Puno",
+      "provincia": "Carabaya",
+      "porcentaje_saneado": 22,
+      "porcentaje_previo": 0,
+      "detalle": "Saneamiento de aproximadamente 222 km de límites en más de diez distritos (Corani, Macusani, San Gabán, Ayapata, entre otros)",
+      "norma": "Dictamen aprobado por el Pleno del Congreso",
+      "fecha_aprobacion": "2026-06"
+    },
+    {
+      "departamento": "Huánuco",
+      "provincia": "Dos de Mayo",
+      "porcentaje_saneado": 50,
+      "detalle": "Cierre al 100% de los límites de los distritos de Chuquis, Quivilla y Marías (pendiente su colindancia con Leoncio Prado); aún pendiente el cierre en Yanas, Pachas, Shunqui, Ripán y Sillapata",
+      "norma": "Ley N° 32650, Ley de saneamiento de trifinios, límites y tramos de algunos distritos de la provincia de Dos de Mayo",
+      "fecha_aprobacion": "2026"
+    }
+  ],
+  "recategorizaciones_recientes": [
+    {
+      "centro_poblado": "Campo Verde",
+      "distrito": "Campo Verde",
+      "provincia": "Coronel Portillo",
+      "departamento": "Ucayali",
+      "categoria_anterior": "pueblo",
+      "categoria_nueva": "ciudad menor",
+      "poblacion_sustento": 5483,
+      "fuente_poblacion": "Directorio Nacional de Centros Poblados - INEI",
+      "norma": "Proyecto de Ley 10882/2024-PE, aprobado por el Pleno",
+      "fecha_aprobacion": "2026-06"
+    }
+  ],
+  "departamentos_sin_dato_confirmado": [
+    "Amazonas", "Áncash", "Apurímac", "Arequipa", "Ayacucho", "Cajamarca",
+    "Cusco", "Huancavelica", "Ica", "La Libertad", "Lambayeque", "Loreto",
+    "Madre de Dios", "Moquegua", "Pasco", "Piura", "San Martín", "Tacna", "Tumbes", "Ucayali"
+  ]
+}

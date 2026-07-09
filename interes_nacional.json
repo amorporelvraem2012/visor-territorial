@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "concepto": "Declaratorias puntuales mediante Decreto Supremo que otorgan tratamiento prioritario y especial a la creación de una circunscripción específica. NO debe confundirse con la declaración general de 'preferente interés nacional' que la propia Ley 27795 hace sobre todo el proceso de demarcación territorial del país (esa es una autorización genérica de priorización, no una lista de casos concretos).",
+    "marco_procedimental_vigente": "D.S. N° 091-2026-PCM incorporó la Décima Novena Disposición Complementaria Final al Reglamento (D.S. 191-2020-PCM / TUO 134-2025-PCM), que regula específicamente cómo se evalúan los expedientes de creación distrital que cuentan con una ley declarativa de interés nacional, sin eximirlos de los requisitos generales de la Ley 27795.",
+    "advertencia": "Este registro es una muestra inicial curada manualmente a partir de fuentes públicas (vLex, El Peruano). NO existe una API o base de datos oficial única para estas declaratorias -- están dispersas en publicaciones individuales de El Peruano. Se recomienda ampliar este archivo con revisión periódica del diario oficial y de los dictámenes de la Comisión de Descentralización del Congreso.",
+    "fecha_carga_datos": "2026-07-08"
+  },
+  "declaratorias": [
+    {
+      "norma_declaratoria": "D.S. N° 037-2016-PCM",
+      "fecha": "2016",
+      "departamento": "Puno",
+      "provincia_base": "San Román",
+      "distrito_base": "Juliaca",
+      "distrito_propuesto": "San Miguel",
+      "estado": "Zona declarada de interés nacional para la creación del distrito propuesto",
+      "tratamiento": "Prioritario y especial, conforme al Reglamento de la Ley 27795"
+    },
+    {
+      "norma_declaratoria": "D.S. N° 001-2016-PCM",
+      "fecha": "2016",
+      "departamento": "Moquegua",
+      "provincia_base": "Mariscal Nieto",
+      "distrito_base": "Moquegua",
+      "distrito_propuesto": "San Antonio",
+      "estado": "Zona declarada de interés nacional para la creación del distrito propuesto",
+      "tratamiento": "Prioritario y especial, conforme al Reglamento de la Ley 27795"
+    }
+  ],
+  "campos_a_completar_por_el_usuario": [
+    "Revisar El Peruano (busquedas.elperuano.pe) por 'zona de interés nacional' + 'creación de distrito' para casos posteriores a 2016",
+    "Revisar dictámenes de la Comisión de Descentralización, Regionalización, Gobiernos Locales y Modernización de la Gestión del Estado del Congreso",
+    "Confirmar si alguno de estos dos casos (San Miguel / San Antonio) ya culminó su creación como distrito o sigue en trámite"
+  ]
+}
