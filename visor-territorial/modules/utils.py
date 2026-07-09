@@ -29,18 +29,22 @@ def cargar_geojson(nombre_archivo: str) -> dict:
         return json.load(f)
 
 
-# --- Paleta institucional/cartográfica (ver design tokens en README) ---
+# --- Paleta institucional: "verde prado" + cartografía ---
 PALETA = {
-    "papel": "#F3F2EC",
-    "tinta": "#20302C",
-    "andina": "#2C4A45",
+    "papel": "#F3F5EC",
+    "tinta": "#22301C",
+    "prado": "#4F7942",
+    "prado_oscuro": "#2E4A28",
+    "arena": "#E7ECDC",
+    "contorno": "#8FA876",
     "achiote": "#A8481F",
-    "sillar": "#8B7355",
-    "cumple": "#3D7A5C",
+    "cumple": "#3D7A34",
     "pendiente": "#B8860B",
     "no_cumple": "#A13D3D",
-    "sin_dato": "#C9C7BB",
+    "sin_dato": "#C7CDBB",
 }
+
+_TOPO_SVG_B64 = "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDAiIGhlaWdodD0iMjQwIj4KICA8ZyBmaWxsPSJub25lIiBzdHJva2U9IiM4RkE4NzYiIHN0cm9rZS13aWR0aD0iMSIgb3BhY2l0eT0iMC4zNSI+CiAgICA8cGF0aCBkPSJNMCw0MCBRMzAsMjAgNjAsNDAgVDEyMCw0MCBUMTgwLDQwIFQyNDAsNDAiLz4KICAgIDxwYXRoIGQ9Ik0wLDkwIFEzMCw2NSA2MCw5MCBUMTIwLDkwIFQxODAsOTAgVDI0MCw5MCIvPgogICAgPHBhdGggZD0iTTAsMTQwIFEzMCwxMTUgNjAsMTQwIFQxMjAsMTQwIFQxODAsMTQwIFQyNDAsMTQwIi8+CiAgICA8cGF0aCBkPSJNMCwxOTAgUTMwLDE2NSA2MCwxOTAgVDEyMCwxOTAgVDE4MCwxOTAgVDI0MCwxOTAiLz4KICAgIDxwYXRoIGQ9Ik0tMjAsMTUgUTEwLC01IDQwLDE1IFQxMDAsMTUgVDE2MCwxNSBUMjIwLDE1Ii8+CiAgICA8cGF0aCBkPSJNLTIwLDY1IFExMCw0NSA0MCw2NSBUMTAwLDY1IFQxNjAsNjUgVDIyMCw2NSIgb3BhY2l0eT0iMC42Ii8+CiAgICA8cGF0aCBkPSJNLTIwLDExNSBRMTAsOTUgNDAsMTE1IFQxMDAsMTE1IFQxNjAsMTE1IFQyMjAsMTE1IiBvcGFjaXR5PSIwLjYiLz4KICAgIDxwYXRoIGQ9Ik0tMjAsMTY1IFExMCwxNDUgNDAsMTY1IFQxMDAsMTY1IFQxNjAsMTY1IFQyMjAsMTY1IiBvcGFjaXR5PSIwLjYiLz4KICAgIDxwYXRoIGQ9Ik0tMjAsMjE1IFExMCwxOTUgNDAsMjE1IFQxMDAsMjE1IFQxNjAsMjE1IFQyMjAsMjE1IiBvcGFjaXR5PSIwLjYiLz4KICA8L2c+Cjwvc3ZnPg=="
 
 CSS_GLOBAL = f"""
 <style>
@@ -50,9 +54,24 @@ html, body, [class*="css"] {{
     font-family: 'IBM Plex Sans', sans-serif;
 }}
 
+[data-testid="stAppViewContainer"] {{
+    background-color: {PALETA['papel']};
+    background-image: url("data:image/svg+xml;base64,{_TOPO_SVG_B64}");
+    background-repeat: repeat;
+    background-size: 240px 240px;
+}}
+
+[data-testid="stSidebar"] {{
+    background-color: {PALETA['arena']};
+    background-image: url("data:image/svg+xml;base64,{_TOPO_SVG_B64}");
+    background-repeat: repeat;
+    background-size: 240px 240px;
+    border-right: 1px solid {PALETA['contorno']}66;
+}}
+
 h1, h2, h3 {{
     font-family: 'Source Serif 4', serif !important;
-    color: {PALETA['tinta']} !important;
+    color: {PALETA['prado_oscuro']} !important;
     letter-spacing: -0.01em;
 }}
 
@@ -61,8 +80,8 @@ h1, h2, h3 {{
     font-size: 0.72rem;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: {PALETA['achiote']};
-    border-bottom: 1px solid {PALETA['sillar']}55;
+    color: {PALETA['prado']};
+    border-bottom: 1px solid {PALETA['contorno']}77;
     padding-bottom: 6px;
     margin-bottom: 4px;
 }}
@@ -85,8 +104,8 @@ h1, h2, h3 {{
 .sello-pendiente {{ color: {PALETA['pendiente']}; background: {PALETA['pendiente']}14; }}
 
 .tarjeta-norma {{
-    border-left: 3px solid {PALETA['achiote']};
-    background: {PALETA['andina']}08;
+    border-left: 3px solid {PALETA['prado']};
+    background: {PALETA['arena']}CC;
     padding: 10px 16px;
     margin: 8px 0;
     border-radius: 2px;
@@ -94,13 +113,15 @@ h1, h2, h3 {{
 
 .advertencia-normativa {{
     border: 1px solid {PALETA['pendiente']}55;
-    background: {PALETA['pendiente']}0E;
+    background: {PALETA['pendiente']}12;
     border-radius: 4px;
     padding: 12px 16px;
     font-size: 0.9rem;
 }}
 
-hr {{ border-color: {PALETA['sillar']}44; }}
+hr {{ border-color: {PALETA['contorno']}55; }}
+
+[data-testid="stMetricValue"] {{ color: {PALETA['prado_oscuro']}; }}
 </style>
 """
 
